@@ -1,0 +1,14 @@
+.ticket {
+  margin-bottom: 15px;
+}
+
+.card {
+  transform: scale(1);
+ 	transition: all 0.69s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+ 	transition: all 0.69s ease;
+}

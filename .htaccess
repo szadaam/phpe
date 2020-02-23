@@ -1,0 +1,19 @@
+# PROJECT CONFIGURATION
+
+SetEnv DOMAIN localhost/phpe/
+SetEnv ABS_PATH /var/www/html/phpe/
+SetEnv HTTPS on
+
+###############################################################################
+
+RewriteEngine on
+
+# The server rewrites incoming url-s and System::processRequest() uses them
+
+Options -Indexes
+
+# Rule for all
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?r=$1 [NC,L,QSA]

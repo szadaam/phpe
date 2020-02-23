@@ -1,0 +1,2 @@
+#Block any .php request
+RewriteRule ^(.+)\.php  [NC,L,QSA]
